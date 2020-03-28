@@ -11,8 +11,13 @@ public class Main {
         String outputFile = in.next();
         d.printToFile(outputFile);
     }
+    private static void workWithElevators() {
+        Elevators elevator = new Elevators(4);
+        elevator.request(-1, 5, 2);
+        elevator.request(1, 4, 8);
 
+    }
     public static void main(String[] args) {
-        workWithDictionary();
+        workWithElevators();
     }
 }
